@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dicas de Motivação</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Dicas de Motivação</h1>
+        <nav>
+            <span><a href="indexMeuSite.html">Página inical</a></span>
+            <span><a href="saude-mental.html">Saúde Mental</a></span>
+            <span><a href="exercicios.html">Exercícios Físicos</a></span>
+            <span><a href="contato.html">Contato</a></span>
+        </nav>
+    </header>
+
+    <main>
+        <br>
+        <div class="imagens">
+            <img class="sombra" src="imagens/motivacaogif.gif" alt="Descrição da Imagem" width="950" height="500">
+        </div>
+        <br>
+        <div class="button-container">
+            <button class="motivational-button" onclick="showMotivation()">Receber uma Dica de Motivação</button>
+            <p id="motivationalTip"></p>
+        </div>
+        <script>
+            function showMotivation() {
+                const tips = [
+                    "Acredite em você mesmo!",
+                    "Não tenha medo de falhar, isso faz parte do aprendizado!",
+                    "Estabeleça metas pequenas e celebre cada conquista!",
+                    "Mantenha um diário de gratidão!",
+                    "Conecte-se com pessoas que te inspiram!"
+                ];
+                document.getElementById("motivationalTip").innerText = tips[Math.floor(Math.random() * tips.length)];
+            }
+        </script>
+        <h2>Citações Inspiradoras</h2>
+
+        <ul>
+            <li>"A única maneira de fazer um ótimo trabalho é amar o que você faz." – Steve Jobs</li>
+            <li>"O sucesso é a soma de pequenos esforços repetidos dia após dia." – Robert Collier</li>
+            <li>"Não importa quantas vezes você falhe, você só precisa estar certo uma vez." – Drew Houston</li>
+            <li>"Acredite em si mesmo e todo o resto virá naturalmente." – Elin Hilderbrand</li>
+        </ul>
+
+        <h2>Estratégias de Motivação</h2>
+        <ul>
+            <li>Estabeleça metas claras e alcançáveis.</li>
+            <li>Crie uma rotina que te inspire.</li>
+            <li>Celebre pequenas conquistas.</li>
+            <li>Visualize seu sucesso diariamente.</li>
+            <li>Mantenha um diário de gratidão.</li>
+        </ul>
+
+        <h2>Dicas para Criar Disciplina</h2>
+        <ul>
+            <li>Defina horários específicos para suas atividades e cumpra-os rigorosamente.</li>
+            <li>Elimine distrações do seu ambiente de trabalho.</li>
+            <li>Use a técnica Pomodoro: trabalhe por 25 minutos e descanse 5 minutos.</li>
+            <li>Recompense-se após completar tarefas importantes.</li>
+            <li>Envolva-se com pessoas que também buscam disciplina e motivação.</li>
+        </ul>
+
+        <h2>Exercícios para Aumentar a Motivação</h2>
+        <p>Experimente as seguintes atividades para se manter motivado:</p>
+        <ul>
+            <li>Pratique a meditação diariamente.</li>
+            <li>Faça exercícios físicos regulares, como caminhada ou yoga.</li>
+            <li>Participe de grupos de apoio ou workshops.</li>
+            <li>Leia livros inspiradores sobre desenvolvimento pessoal.</li>
+            <li>Escreva suas metas e reveja-as frequentemente.</li>
+        </ul>
+
+        <h2>Recursos Adicionais</h2>
+        <p>Aqui estão alguns livros e podcasts recomendados para você:</p>
+        <ul>
+            <li><strong>Livros:</strong>
+                <ul>
+                    <li>"O Poder do Hábito" – Charles Duhigg</li>
+                    <li>"A Mágica da Arrumação" – Marie Kondo</li>
+                    <li>"Desperte Seu Herói Interior" – Victor Hugo</li>
+                </ul>
+            </li>
+            <li><strong>Podcasts:</strong>
+                <ul>
+                    <li>"Motivação e Resultados" – Flávio Augusto</li>
+                    <li>"Café Brasil" – Luciano Pires</li>
+                    <li>"O Podcast da Mente" – Psicologia e Motivação</li>
+                </ul>
+            </li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; Gym Elevate. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>

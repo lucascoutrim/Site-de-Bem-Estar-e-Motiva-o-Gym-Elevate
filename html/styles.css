@@ -1,0 +1,262 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Preto */
+    color: #ffffff; /* Branco */
+    font-size: 17px; /* Tamanho da fonte */
+}
+
+
+
+
+header {
+    background: #6a0dad;
+    /* Roxo */
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+    padding: 5px;
+    height: auto;
+    margin: 0 auto;
+    font-size: 18px;
+    border: 20px solid #5d0c9c;
+    animation: slideIn 1.5s forwards;  /*tempo para o header 'aparecer'*/
+
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #4d078d;  /*cor da linha que corre*/
+    bottom: 0;
+    left: 0;
+    animation: expandLine 2.2s forwards;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes expandLine {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+h1 {
+    font-size: 36px;
+    /*h1 personalizado movimentado*/
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideUp 1.5s forwards;
+}
+
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    font-size: 36px;
+    /*h2 personalizado movimentado*/
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideUp 1.5s forwards;
+}
+
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h3 {
+    font-size: 36px;
+    /*h3 personalizado movimentado*/
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideUp 1.5s forwards;
+}
+
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+nav {
+    margin: 1rem 0;
+}
+
+nav a {
+    margin: 0 1rem;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+main {
+    padding: 1rem;
+    background: #222;
+    /* Cinza escuro */
+    margin: 1rem;
+    border-radius: 5px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #6a0dad;
+    /* Roxo */
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 5px;
+    height: auto;
+    margin: 0 auto;
+    font-size: 15px;
+    border: 20px solid #5d0c9c;
+
+}
+
+.motivational-button {
+    display: inline-block;
+    background-color: #5d0c9c;
+    /* Cor do roxa */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;;
+}
+
+/* Para centralizar apenas o botão e a mensagem */
+
+.motivational-button:hover {
+    background-color: #7409c2;
+    /* Cor mais escura */
+}
+
+.button-container {
+    text-align: center;
+    /* Centraliza o conteúdo do container */
+    margin: 20px 0;
+    /* Espaçamento  de cima e tambem embaixo */
+}
+
+#motivationalTip {
+    margin-top: 10px;
+    /* Espaçamento de cima da mensagem botão */
+    font-size: 18px;
+    /* Tamanho da fonte da mensagem botão */
+}
+
+.sombra {
+    box-shadow: 1.0px 1.0px 5.0px 5.0px #6a0dad;
+}
+
+.imagens {
+    display: flex;
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+}
+
+.imagens {
+    position: relative;
+    transition: transform 0.3s;
+}
+
+button {
+    background-color: #28a745;
+    /* Cor verde */
+    color: white;
+    /* Cor do texto */
+    border: none;
+    /* Remove as bordas */
+    padding: 0.5rem 1rem;
+    /* Espaçamento interno */
+    border-radius: 5px;
+    /* Bordas arredondadas */
+    cursor: pointer;
+    /* Muda o cursor do clique */
+    position: relative;
+    /* Para posicionar elementos */
+    overflow: hidden;
+    /* Esconde o conteúdo que ultrapassa */
+}
+
+.whatsapp-button {
+    display: inline-block;
+    background-color: #5d0c9c;
+    /* Cor do roxa */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E;
+    /* Cor do WhatsApp ao passar o mouse por cima */
+}
+
+.botao-instagram {
+    display: inline-block;
+    background-color: #5d0c9c;
+    /* Cor do botao do Instagram */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.botao-instagram:hover {
+    background-color: #FC8E1D;
+    /* Cor do Instagram ao passar o mouse por cima */
+}
+
+.botao-email {
+    display: inline-block;
+    background-color: #5d0c9c;
+    /* Cor roxa */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.botao-email:hover {
+    background-color: #1E90FF;
+    /* Cor do email ao passar o mouse por cima */
+}
